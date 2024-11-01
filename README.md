@@ -1,11 +1,11 @@
 # CPM-86 for Solo
 
-This repository contains the code and tools required to build CPM-86 Kernel for Solo.
+This repository contains the code and tools required to build CPM-86 for Solo.
 
 
-## Building CPM-86 Kernel
+## Building CPM-86
 
-### What tools do I need to build CPM-86 Kernel?
+### What tools do I need to build CPM-86?
 
 You'll need to install the following:
 - gcc
@@ -31,7 +31,17 @@ Load the environment for building:
 
     source env.sh
 
-Build the kernel:
+Build the CPM kernel:
 
     make
+
+Build the disk images:
+
+    make dist
+
+
+## Credits
+
+Thanks to tsupplis for his [CPM86 kernel](https://github.com/tsupplis/cpm86-kernel) work.
+We borrow the base image and pre-compiled CPM binaries from his repository.
 
