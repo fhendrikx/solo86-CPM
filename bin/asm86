@@ -1,0 +1,2 @@
+#!/bin/bash
+$TOPDIR/bin/tnylpo "$TOPDIR/share/cpm/asm86" "$@"

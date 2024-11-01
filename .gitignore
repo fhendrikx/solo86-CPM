@@ -1,0 +1,8 @@
+*.h86
+*.lst
+*.sym
+*.sys
+cross/*
+!cross/dist
+!cross/Makefile
+out/*
