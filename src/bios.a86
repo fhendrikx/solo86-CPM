@@ -207,11 +207,17 @@ int_trap:
 ; -------------------------------------
 
 CONST:                      ;console status
-    in      al, UART_CMD
-    cmp     al, 0
-    jnz     Rx_Ready
-    ret                     ; return not ready flag 00H
+    mov     ah,01h
+    int     16h
+    jz      Rx_Ready
+    mov     al, 0
+    ret
 
+;    in      al, UART_CMD
+;    cmp     al, 0
+;    jnz     Rx_Ready
+;    ret                     ; return not ready flag 00H
+;
 Rx_ready:
     mov     al, 0FFH        ; return ready flag 0FFH
     ret
@@ -221,14 +227,20 @@ Rx_ready:
 CONIN:                      ;console input
     call    CONST
     jz      CONIN           ; wait for Rx ready
-    in      al, UART_DATA
+;    in      al, UART_DATA
+    mov     al, 0
+    int     16h
     ret
 
 ; -------------------------------------
 
 CONOUT:                     ;console output
+;    mov     al, cl
+;    out     UART_DATA, al
+    mov     ah, 0eh
     mov     al, cl
-    out     UART_DATA, al
+    mov     bx, 07h
+    int     10h
     ret
 
 ; -------------------------------------

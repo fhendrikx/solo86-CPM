@@ -1,2 +1,2 @@
 #!/bin/bash
-$TOPDIR/bin/tnylpo "$TOPDIR/share/cpm/gencmd" "$@"
+$TOPDIR/bin/tnylpo "$TOPDIR/lib/cpm/gencmd" "$@"

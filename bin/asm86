@@ -1,2 +1,2 @@
 #!/bin/bash
-$TOPDIR/bin/tnylpo "$TOPDIR/share/cpm/asm86" "$@"
+$TOPDIR/bin/tnylpo "$TOPDIR/lib/cpm/asm86" "$@"
