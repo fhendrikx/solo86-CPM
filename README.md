@@ -44,6 +44,5 @@ Build the disk images:
 
 ## Credits
 
-Thanks to tsupplis for his [CPM86 kernel](https://github.com/tsupplis/cpm86-kernel) work.
-We borrow the base image and pre-compiled CPM binaries from his repository.
+Thanks to tsupplis for his [CPM86 kernel](https://github.com/tsupplis/cpm86-kernel) work. This repository borrows the base image and pre-compiled CPM binaries from his repository.
 
