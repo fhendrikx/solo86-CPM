@@ -2,6 +2,8 @@
 
 This repository contains the code and tools required to build CPM-86 for Solo.
 
+PLEASE NOTE: this repository contains on-going work and should NOT be considered final. In particular, the BIOS layer has not yet been implemented.
+
 
 ## Building CPM-86
 
